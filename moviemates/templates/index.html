@@ -1,0 +1,40 @@
+
+
+{% extends 'base.html' %}
+{% block content %}
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Movie Mates</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body style = "background: url('graphics/cinemaPic.jpg') no-repeat center center fixed; size: auto; margin: auto;  display: block;"><br/>
+
+<div style = "background-color: #2C4481; opacity: 0.75;" class = "ghost"><br/>
+<img src = "static/images/movieMates.JPG" alt = "logo" class = "grow" style = "width: 20%; margin-left: 40%; margin-right: 40%;"><br/>
+</div>
+
+<br/>
+<div style = "text-align: center;">
+<h1 style = "margin-bottom: 0"> A new type of movie matchmaker. </h1>
+<h2> Find your new <span style= "font-size: xx-large"> MOVIE MATE </span> based on your personal taste! </h2><br/>
+
+<div>
+<a href = "signin.html" class="button"><span>Sign in with Google</span></a>
+</div>
+
+<p style= "padding: 1%">I don't have a Google account. <a href = "https://accounts.google.com/signup/v2/webcreateaccount?hl=en&flowName=GlifWebSignIn&flowEntry=SignUp" class = "link">Sign up. </a></p>
+<br/>
+<div style = "background-color: #2C4481; opacity: 0.5;"><br/>
+
+<p style = "color: yellow"> MovieMates </p>
+<p style = "font-size: small"><em> Alex & Cat Creations<em></p>
+<br/>
+
+</div>
+<div class="snow" />
+
+    <script src="script.js"></script>
+  </body>
+{%endblock%}

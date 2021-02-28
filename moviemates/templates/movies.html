@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container">
+	<br/>
+	<h1>Enter in your favorite movies (please type as written in the movies.csv file!)</h1>
+	<br/>
+<form action="/movies" METHOD="POST">
+<input type="text" placeholder="Enter Twitter handle here..." name="handle" value="{{user_name}}">
+<input type="text" placeholder="Enter movie title here..." name="name">
+<input type="submit" name="Add Name" class="btn btn-secondary">
+</form>	
+<br/><br/>
+{% for movie_like in movie_likes %}
+	<h4>{{movie_like}}</h4>
+{% endfor %}
+{% for i in similar_keys %}
+	<p>The similarity between {{ user }} and {{ i }} is {{ master_list[i] }} %</p>
+{% endfor %}
+</div>
+{%endblock%}
+
+
+
+
+
+
